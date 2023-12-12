@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/3dc4197b89454d4fad9f3910e58b2243/artifacts
+end_time: 1702385143011
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3dc4197b89454d4fad9f3910e58b2243
+run_name: worried-foal-937
+run_uuid: 3dc4197b89454d4fad9f3910e58b2243
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702385142685
+status: 4
+tags: []
+user_id: root
