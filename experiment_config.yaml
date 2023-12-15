@@ -1,0 +1,15 @@
+project_name: mlflow-test
+team: ml
+
+experiment:
+  name: Regressor% Random Forest
+  description: change descri[tion].
+
+run:
+  description: Get some description.
+  random_state: 0
+  model:
+    params:
+      n_estimators: 2
+      max_depth: 70
+      max_features: 15
