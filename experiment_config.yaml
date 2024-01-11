@@ -2,11 +2,11 @@ project_name: mlflow-test
 team: ml
 
 experiment:
-  name: Regressor% Random Forest
-  description: change descri[tion].
+  name: Regressor Random Forest
+  description: change description
 
 run:
-  description: Get some description.
+  description: Some description.
   random_state: 0
   model:
     params:

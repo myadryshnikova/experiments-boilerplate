@@ -12,6 +12,7 @@ RUN python -m pip install --upgrade pip \
     && apt-get -y install gcc python3-dev \
     && apt-get install -y --no-install-recommends git
 RUN apt-get install unzip
+RUN apt-get -y install build-essential 
 #
 #
 RUN python -m venv venv

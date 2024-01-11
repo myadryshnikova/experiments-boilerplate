@@ -1,13 +1,12 @@
-import mlflow
-
 from sklearn.model_selection import train_test_split
 from sklearn.datasets import load_diabetes
 from sklearn.ensemble import RandomForestRegressor
 
+import mlflow
+
 from experiment_config_provider import PARAMS
 
-mlflow.autolog()
-
+mlflow.sklearn.autolog()
 def experiment_run():
     db = load_diabetes()
     X_train, X_test, y_train, y_test = train_test_split(db.data, db.target)
@@ -18,4 +17,3 @@ def experiment_run():
         )
 
     rf.fit(X_train, y_train)
-    

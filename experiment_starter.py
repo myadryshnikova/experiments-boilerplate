@@ -1,8 +1,10 @@
 import mlflow
 from experiment_config_provider import PARAMS
 from experiment_run import experiment_run
+import os
 
-mlflow.set_tracking_uri("http://host.docker.internal:8080")
+
+mlflow.set_tracking_uri(os.getenv("TRACKING_URI"))
 
 experiment_description = (
     PARAMS.experiment.description
@@ -19,11 +21,10 @@ try:
         name=PARAMS.experiment.name, 
         tags=experiment_tags,
         )
-except mlflow.exceptions.RestException:
+except mlflow.exceptions.MlflowException:
     experiment_id = mlflow.get_experiment_by_name(PARAMS.experiment.name).experiment_id
 
-
-mlflow.autolog()
+mlflow.sklearn.autolog()
 with mlflow.start_run(
     experiment_id=experiment_id,
     description=PARAMS.run.description) as run:
