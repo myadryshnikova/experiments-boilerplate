@@ -1,5 +1,15 @@
 # experiments-boilerplate
 
+# Table of contents
+- [experiments-boilerplate](#experiments-boilerplate)
+  - [Description](#description)
+  - [Performing experiments](#performing-experiments)
+    - [Prerequisites](#prerequisites)
+    - [Dev Containers](#dev-containers)
+    - [Adding dependencies to the environment](#adding-dependencies-to-the-environment)
+    - [Changing experiment parameters](#changing-experiment-parameters)
+    - [Do run of experiment](#do-run-of-experiment)
+
 ## Description
 Experimental repository boilerplate for machine learning experiments.
 
