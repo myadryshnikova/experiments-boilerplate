@@ -14,6 +14,7 @@
 Experimental repository boilerplate for machine learning experiments.
 
 Contains the following services:
+* Jupyter
 * Mlflow [https://mlflow.org/]
 
 ## Performing experiments

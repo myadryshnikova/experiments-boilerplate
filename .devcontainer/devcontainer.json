@@ -30,8 +30,12 @@
 				"ms-toolsai.jupyter-renderers",
 				"vscode-icons-team.vscode-icons",
 				"wayou.vscode-todo-highlight",
-				"timonwong.shellcheck",
-			]
+				"timonwong.shellcheck"
+			],
+			"settings": {
+				"files.autoSave": "afterDelay",
+				"files.autoSaveDelay": 1000
+			}
 		  }
 	},
 	"runArgs": ["--env-file",".env"]
